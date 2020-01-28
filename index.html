@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Register Form</title>
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Zhi+Mang+Xing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+					<button type="button" class="toggle-btn" onclick="login()" >Login</button>
+					<button type="button" class="toggle-btn" onclick="register()">Register</button>
+				
+				
+			</div>
+			<div class="social-icons">
+				<img src="fb.png" alt="">
+				<img src="tw.png" alt="">
+				<img src="gp.png" alt="">
+ 
+			
+			</div>
+			<form id="login" action="" class="input-group">
+				<input type="text" name="" class="input-field" placeholder="User Id" required>
+				<input type="text" name="" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box">
+				<span>Remember Password	</span>
+				<button type="submit" class=submit-btn>Log in</button>
+
+				<div class="tag">
+					<p class="copyright">Made By Himanshu Verma</p>
+				</div>
+				
+				
+				
+				
+			</form>
+
+
+
+				<form id="register" action="" class="input-group">
+					<input type="text" name="" class="input-field" placeholder="User Id" required>
+					<input type="email" name="" class="input-field" placeholder="Email Id" required>
+					<input type="text" name="" class="input-field" placeholder="Enter Password" required>
+					<input type="checkbox" class="check-box">
+					<span>I agree to terms and condition</span>
+					<button type="submit" class="submit-btn">Register</button>
+
+
+					<div class="tag">
+					<p class="copyright">Made By Himanshu Verma</p>
+				</div>
+			</form>
+
+		</div>
+
+	</div>
+
+	<script>
+		var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+
+		function register(){
+			x.style.left="-400px";
+			y.style.left="50px";
+			z.style.left="110px";
+
+		}function login(){
+			x.style.left="50px";
+			y.style.left="450px";
+			z.style.left="0";
+
+		}
+	</script>
+</body>
+</html>
